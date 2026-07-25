@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas - Expedition Log</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER & NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar container-fluid px-lg-5">
+      <!-- Logo block -->
+      <a href="index.html" class="logo-link">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88"/>
+        </svg>
+        <span class="logo-text">Atlas</span>
+      </a>
+
+      <!-- Right Side Navigation items -->
+      <div class="nav-right">
+        <ul class="nav-links mb-0">
+          <li><a href="#expeditions" class="nav-item active-link">Expeditions</a></li>
+          <li><a href="#book" class="nav-item">Book</a></li>
+        </ul>
+        <a href="#inquire" class="btn-inquire">Inquire Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 2. HERO / CONTENT SECTION -->
+  <main>
+    <section class="hero-section">
+      <div class="container-fluid px-lg-5">
+        <span class="sub-heading">Catalog</span>
+        <h1 class="main-heading">Expedition Log</h1>
+        <p class="description">
+          Each journey below has been tested, refined, and proven to deliver transformation. Filter by difficulty to find your edge.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. EXPEDITIONS GRID & FILTER SECTION -->
+    <section class="expeditions-section pb-5">
+      <div class="container-fluid px-lg-5">
+        
+        <!-- Filter Bar -->
+        <div class="filter-bar d-flex flex-wrap gap-2 pt-4 mb-5">
+          <button class="filter-btn active">ALL</button>
+          <button class="filter-btn">MODERATE</button>
+          <button class="filter-btn">HARD</button>
+          <button class="filter-btn">EXTREME</button>
+        </div>
+
+        <!-- Expeditions Cards Grid -->
+        <div class="row g-4">
+
+          <!-- Card 1: K2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card-item">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="K2 Base Camp" class="card-img">
+                <span class="tag tag-difficulty tag-orange">EXTREME</span>
+                <span class="tag tag-date">MAR 2025</span>
+              </div>
+              <div class="card-content pt-3">
+                <span class="card-location">Karakoram, Pakistan</span>
+                <h2 class="card-title">K2 BASE CAMP</h2>
+                <p class="card-desc">
+                  Trek to the base of the world's most dangerous mountain. A journey through the Karakoram that tests every limit.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2: Patagonia -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card-item">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Patagonia Traverse" class="card-img">
+                <span class="tag tag-difficulty tag-gold">HARD</span>
+                <span class="tag tag-date">FEB 2025</span>
+              </div>
+              <div class="card-content pt-3">
+                <span class="card-location">Torres del Paine, Chile</span>
+                <h2 class="card-title">PATAGONIA TRAVERSE</h2>
+                <p class="card-desc">
+                  Cross the legendary Torres del Paine circuit through glaciers, granite spires, and pristine wilderness.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3: Arctic -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card-item">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Arctic Expedition" class="card-img">
+                <span class="tag tag-difficulty tag-orange">EXTREME</span>
+                <span class="tag tag-date">JUN 2025</span>
+              </div>
+              <div class="card-content pt-3">
+                <span class="card-location">Greenland Ice Sheet</span>
+                <h2 class="card-title">ARCTIC EXPEDITION</h2>
+                <p class="card-desc">
+                  Kayak through iceberg-filled fjords and witness the raw power of the Arctic in its summer glory.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4: Antarctic Peninsula -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card-item">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=800&q=80" alt="Antarctic Peninsula" class="card-img">
+                <span class="tag tag-difficulty tag-orange">EXTREME</span>
+                <span class="tag tag-date">DEC 2025</span>
+              </div>
+              <div class="card-content pt-3">
+                <span class="card-location">Antarctica</span>
+                <h2 class="card-title">ANTARCTIC PENINSULA</h2>
+                <p class="card-desc">
+                  The ultimate frontier. Ice climbing, wildlife encounters, and landscapes no photograph can capture.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 5: Amazon Deep Jungle -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card-item">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80" alt="Amazon Deep Jungle" class="card-img">
+                <span class="tag tag-difficulty tag-gold">HARD</span>
+                <span class="tag tag-date">APR 2025</span>
+              </div>
+              <div class="card-content pt-3">
+                <span class="card-location">Amazon Basin, Brazil</span>
+                <h2 class="card-title">AMAZON DEEP JUNGLE</h2>
+                <p class="card-desc">
+                  Venture into uncharted rainforest with indigenous guides. Survival skills meet ancient wisdom.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 6: Everest Base Camp -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card-item">
+              <div class="card-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80" alt="Everest Base Camp" class="card-img">
+                <span class="tag tag-difficulty tag-green">MODERATE</span>
+                <span class="tag tag-date">OCT 2025</span>
+              </div>
+              <div class="card-content pt-3">
+                <span class="card-location">Khumbu, Nepal</span>
+                <h2 class="card-title">EVEREST BASE CAMP</h2>
+                <p class="card-desc">
+                  The classic Himalayan pilgrimage. Walk in the footsteps of legends to the roof of the world.
+                </p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. FOOTER SECTION -->
+  <footer class="site-footer py-5">
+    <div class="container-fluid px-lg-5">
+      <div class="row gy-4 mb-5">
+        
+        <!-- Left Brand Description -->
+        <div class="col-12 col-md-6 col-lg-5">
+          <a href="index.html" class="logo-link mb-3 d-inline-flex align-items-center">
+            <svg class="logo-icon me-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88"/>
+            </svg>
+            <span class="logo-text">ATLAS</span>
+          </a>
+          <p class="footer-text mt-2">
+            Elite expeditions to Earth's last frontiers. We guide the bold beyond the edge of the map.
+          </p>
+        </div>
+
+        <!-- Center Nav Links -->
+        <div class="col-6 col-md-3 col-lg-3 offset-lg-1">
+          <h5 class="footer-heading mb-3">NAVIGATE</h5>
+          <ul class="list-unstyled footer-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#expeditions">Expeditions</a></li>
+            <li><a href="#booking">Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Connect Link -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h5 class="footer-heading mb-3">CONNECT</h5>
+          <a href="mailto:expeditions@atlas.com" class="footer-email d-inline-flex align-items-center">
+            <svg class="me-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            expeditions@atlas.com
+          </a>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider mb-4">
+
+      <!-- Bottom Credits and HQ -->
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center text-muted footer-bottom-text">
+        <span>© 2024 ATLAS EXPEDITIONS. ALL RIGHTS RESERVED.</span>
+        <span class="mt-2 mt-sm-0">
+          <span class="hq-dot">●</span> HQ: 40.7128° N, 74.0060° W
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
